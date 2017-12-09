@@ -12,4 +12,4 @@ Here are some of my favorite landscape photos I took in 2017.
 <p>When I came back to start my sophomore year, my dad came with me from Ecuador and I took him for a little adventure in Boston. We biked from MIT to the Charles Esplanade, all the way to Allston and back. Sunsets at the Charles are magical.</p>
 <br>
 <img src="/files/Pic3-2017.JPG">
-<p>I was in my dorm, blinds closed, and when I walked into the hallway, I just saw a purple light coming in from the window, which prompted me to run outside as fast as I could to watch the most gorgeous sunset I've seen. That was followed by me biking like a maniac around campus to try to find the best spot to capture the sunset from, but it turns out that the best view was actually from my dorm</p>
+<p>I was in my dorm, blinds closed, and when I walked into the hallway, I just saw a purple light coming in from the window, which prompted me to run outside as fast as I could to watch the most gorgeous sunset I've ever seen. That was followed by me biking like a maniac around campus to try to find the best spot to capture the sunset from, but it turns out that the best view was actually from my dorm</p>
