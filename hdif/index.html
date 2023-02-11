@@ -1,0 +1,510 @@
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> -->
+<html>
+
+<!-- ======================================================================= -->
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  div {
+    max-width: 95%;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    max-width: 1100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+
+  .authors {
+    font-size: 18px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-D96NBKN65J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D96NBKN65J');
+  </script> -->
+
+  <div max-width=100%>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="resources/ri.jpg">
+    <title>How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://mateoguaman.com/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+  
+    <meta property="og:site_name" content="HDIF" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability" />
+    <meta property="og:description" content="Guaman Castro, Triest, Wang, Gregory, Sanchez, Rogers III, Scherer. How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability. 2023." />
+    <meta property="og:url" content="https://mateoguaman.com/" />
+    <meta property="og:image" content="https://mateoguaman.com/hdif/resources/teaser.jpg" />
+    <meta property="og:video" content="https://youtu.be/19sDs1S8IGk" />
+  
+    <meta property="article:publisher" content="https://mateoguaman.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability" />
+    <meta name="twitter:description" content="Guaman Castro, Triest, Wang, Gregory, Sanchez, Rogers III, Scherer. How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability. 2023." />
+    <meta name="twitter:url" content="https://mateoguaman.com/" />
+    <meta name="twitter:image" content="https://mateoguaman.com/hdif/resources/teaser.jpg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+  
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:image" content="https://mateoguaman.com/hdif/resources/teaser.jpg" />
+    <meta name="twitter:player" content="https://www.youtube.com/embed/19sDs1S8IGk?rel=0&showinfo=0" />
+    <meta name="twitter:player:width" content="640" />
+    <meta name="twitter:player:height" content="360" />
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">How Does It Feel? Self-Supervised Costmap Learning <br/> for Off-Road Vehicle Traversability</span></center>
+      <div class="table-like authors" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+        <div><center><span ><a href="https://mateoguaman.com" target="_blank">Mateo Guaman Castro</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://striest.github.io/" target="_blank">Samuel Triest</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://theairlab.org/team/wenshan/" target="_blank">Wenshan Wang</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://www.linkedin.com/in/jason-gregory-88b70b167" target="_blank">Jason M. Gregory</a></span></center>
+         <center><span >ARL</span></center>
+         </div>
+
+         <!-- <div><center><span ><a href="" target="_blank">Felix Sanchez</a></span></center>
+         <center><span >Booz Allen</span></center>
+         </div>
+
+         <div><center><span ><a href="https://www.linkedin.com/in/john-rogers-41921a12" target="_blank">John G. Rogers III</a></span></center>
+         <center><span >ARL</span></center>
+         </div>
+
+         <div><center><span ><a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a></span></center>
+         <center><span >CMU</span></center>
+         </div> -->
+      </div>
+      <div class="table-like authors" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+        <!-- <div><center><span ><a href="https://mateoguaman.com" target="_blank">Mateo Guaman Castro</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://striest.github.io/" target="_blank">Samuel Triest</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://theairlab.org/team/wenshan/" target="_blank">Wenshan Wang</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+
+         <div><center><span ><a href="https://www.linkedin.com/in/jason-gregory-88b70b167" target="_blank">Jason M. Gregory</a></span></center>
+         <center><span >ARL</span></center>
+         </div> -->
+
+         <div><center><span ><a href="" target="_blank">Felix Sanchez</a></span></center>
+         <center><span >Booz Allen</span></center>
+         </div>
+
+         <div><center><span ><a href="https://www.linkedin.com/in/john-rogers-41921a12" target="_blank">John G. Rogers III</a></span></center>
+         <center><span >ARL</span></center>
+         </div>
+
+         <div><center><span ><a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a></span></center>
+         <center><span >CMU</span></center>
+         </div>
+      </div>
+      <!-- <table align=center width=50% style="padding-top:0px;padding-bottom:0px">
+          <tr>
+            <td align=center><center><span style="font-size:15px">* equal contribution, random order</span></center></td>
+          <tr/>
+      </table> -->
+      <center><span style="font-size:22px;"><a href='https://www.icra2023.org/'>International Conference on Robotics and Automation (ICRA), 2023</a></span></center>
+      <!-- <center><span style="font-size:18px;"><a href='https://urlworkshop.github.io/'>Unsupervised RL workshop at ICML, 2021. Oral Talk</a></span></center>
+      <center><span style="font-size:18px;"><a href='https://sslrlworkshop.github.io/'>Self-Supervised Learning workshop at ICML, 2021. Oral Talk</a></span></center> -->
+      <!-- <center><span style="font-size:20px;"><a href='https://icml.cc/Conferences/2021'>International Conference on Machine Learning (ICML), 2021</a></span></center> -->
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;padding:5px">
+        <div><center><span style="font-size:28px"><a href="https://arxiv.org/abs/2209.10788">[Arxiv]</a></span></center></div>
+        <!-- <div><center><span style="font-size:28px"><a href='resources/poster.pdf'>[Poster]</a></span></center> </div> -->
+        <!-- <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa'>[Training Code]</a></span></center> </div>
+        <div><center><span style="font-size:28px"><a href='https://github.com/orybkin/lexa-benchmark'>[Benchmark Code]</a></span></center> </div> -->
+        <!-- <div><center><span style="font-size:28px"><a href='https://www.youtube.com/embed/WWHlQbigQp4?autoplay=0&loop=1'>[Long Talk]</a></span></center> </div> -->
+      </div>
+
+      <center>
+      <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/19sDs1S8IGk?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+      <br>
+      <div style="width:800px; margin:0 auto; text-align=right;">
+          Estimating terrain traversability in off-road environments requires reasoning about complex interaction dynamics between the robot and these terrains. However, it is challenging to build an accurate physics model, or create informative labels to learn a model in a supervised manner, for these interactions. We propose a method that learns to predict traversability costmaps by combining exteroceptive environmental information with proprioceptive terrain interaction feedback in a self-supervised manner. Additionally, we propose a novel way of incorporating robot velocity in the costmap prediction pipeline. We validate our method in multiple short and large-scale navigation tasks on a large, autonomous all-terrain vehicle (ATV) on challenging off-road terrains, and demonstrate ease of integration on a separate large ground robot. Our short-scale navigation results show that using our learned costmaps leads to overall smoother navigation, and provides the robot with a more fine-grained understanding of the interactions between the robot and different terrain types, such as grass and gravel. Our large-scale navigation trials show that we can reduce the number of interventions by up to 57% compared to an occupancy-based navigation baseline in challenging off-road courses ranging from 400 m to 3150 m.
+      </div>
+      <br><hr>
+
+      <!-- Method -->
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>System Overview</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        During training, the network takes in patches cropped from a top-down colored map and height map along the driving trajectory, as well as the parameterized velocity corresponding to each patch. The network predicts a traversability cost for each patch, supervised by a pseudo ground-truth cost generated from IMU data. During testing, the whole map is subsampled into small patches, which are fed into the network to generate a dense, continuous costmap.
+      </div>
+      <br/>
+          <center><a href="resources/system_overview.png"><img src = "resources/system_overview.png" width="1100px"></img></a><br></center>
+      <br/><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>ATV Experiment: Short-Scale Navigation</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        In this experiment, the goal of the robot is to drive 200 m straight ahead. Using the baseline costmap and navigation stack, the robot takes the shoretest path and drives through the grass. With our learned costmaps, the robot steers around the patch of grass, since grass has a higher predicted cost than the dirt path.
+      </div>
+      <div style="max-width:970px">
+        <a href="resources/hdif_turnpike_short.mp4"><video src="resources/hdif_turnpike_short.mp4" width="100%" autoplay muted loop></video></a>
+      </div>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>ATV Experiment: Large-Scale Navigation</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        With the baseline costmap, the robot does not distinguish between different terrains of the same hiehgt, and cuts the corner to get to the waypoint faster. However, this corner is too tight and leads to an intervention. With our learned costmaps, the robot takes a wider turn in order to avoid vegetation and rough terrain, which leads to the robot taking a better line through the turn.
+      </div>
+      <div style="max-width:970px">
+        <a href="resources/large_scale_3.m4v"><video src="resources/large_scale_3.m4v" width="100%" autoplay muted loop></video></a>
+      </div>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>Warthog Experiment: Simple Navigation</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        In this experiment, the robot has to reach a goal 50m down a concrete path. The baseline navigation stack cuts directly through the grass to reach the goal, since it does not reason about the traversability of different types of terrain. Using our learned costmaps, the robot reasons that asphalt is smoother than grass and it remains on the asphalt to reach the goal.
+      </div>
+      <div style="max-width:970px">
+        <a href="resources/warthog_hill.mp4"><video src="resources/warthog_hill.mp4" width="100%" autoplay muted loop></video></a>
+      </div>
+      <br><hr>
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>Warthog Experiment: Fork in the Road</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        On the Forest-Fork course, the robot must choose between two paths to reach the goal. Note that the path on the left is covered with small obstacles, while the path on the right is clear of obstacles. With the baseline navigation stack, the robot chooses the cluttered, rough path on the left more often than the smooth path on the right. With our costmaps, the robot consistently chooses the smooth path on the right more often than the rough path on the left. 
+      </div>
+      <div style="max-width:970px">
+        <a href="resources/warthog_forest.mp4"><video src="resources/warthog_forest.mp4" width="100%" autoplay muted loop></video></a>
+      </div>
+      <br><hr>
+
+      <!-- Large-Scale Navigation Trials -->
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><h1>Large-Scale Navigation Trials</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=right">
+        <center>We provide full experiment runs for our large-scale navigation trials below.</center>
+      </div>
+      <br/>
+          <center><a href="resources/nav-results.png"><img src="resources/nav-results.png" width="800px"></img></a><br></center>
+      <br/><hr>
+
+      <!-- Red Course -->
+      <div style="width:800px; margin:0 auto; text-align=center; color: rgb(196, 18, 48)">
+        <center><h1>Red Course</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><p>Length: 400 m. Flat terrain, wooded areas, tight turns</p></center>
+      </div>
+      <br/>
+          <center><a href="resources/red-course-labeled.png"><img src="resources/red-course-labeled.png" width="800px"></img></a><br></center>
+      <br/>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+            <div style="width:300px;padding:0px;color:rgb(196, 18, 48)"><center><h3>Red Course</h3></center></div>
+            <div style="width:300px;padding:0px"><center>Baseline</center></div>
+            <div style="width:300px;padding:0px"><center>Total Interventions: 7</center></div>
+            <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/eALJj8USiJg?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+          <div style="width:300px;padding:0px;color:rgb(196, 18, 48)"><center><h3>Red Course</h3></center></div>
+          <div style="width:300px;padding:0px"><center>Ours</center></div>
+          <div style="width:300px;padding:0px"><center>Total Interventions: 3</center></div>
+          <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/I4wyIULsjzM?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div><hr>
+
+
+      <!-- Blue Course -->
+      <div style="width:800px; margin:0 auto; text-align=center; color: rgb(70, 82, 242)">
+        <center><h1>Blue Course</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><p>Length: 3150 m. Hilly terrain, large gravel, some vegetation</p></center>
+      </div>
+      <br/>
+          <center><a href="resources/blue-course-labeled.png"><img src="resources/blue-course-labeled.png" width="800px"></img></a><br></center>
+      <br/>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+            <div style="width:300px;padding:0px;color:rgb(70, 82, 242)"><center><h3>Blue Course</h3></center></div>
+            <div style="width:300px;padding:0px"><center>Baseline</center></div>
+            <div style="width:300px;padding:0px"><center>Total Interventions: 9</center></div>
+            <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/9i5UYeMd0SI?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+          <div style="width:300px;padding:0px;color:rgb(70, 82, 242)"><center><h3>Blue Course</h3></center></div>
+          <div style="width:300px;padding:0px"><center>Ours</center></div>
+          <div style="width:300px;padding:0px"><center>Total Interventions: 6</center></div>
+          <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/-ZA-KQcZ40s?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div><hr>
+
+
+      <!-- Green Course -->
+      <div style="width:800px; margin:0 auto; text-align=center; color: rgb(22, 112, 6)">
+        <center><h1>Green Course</h1></center>
+      </div>
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <center><p>Length: 950 m. Flat terrain, mostly vegetation</p></center>
+      </div>
+      <br/>
+          <center><a href="resources/green-course-labeled.png"><img src="resources/green-course-labeled.png" width="800px"></img></a><br></center>
+      <br/>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:1100px;margin:auto;padding:0px">
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+            <div style="width:300px;padding:0px;color:rgb(22, 112, 6)"><center><h3>Green Course</h3></center></div>
+            <div style="width:300px;padding:0px"><center>Baseline</center></div>
+            <div style="width:300px;padding:0px"><center>Total Interventions: 11</center></div>
+            <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/l4ltjzu019w?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+
+        <div>
+          <div class="table-like" style="justify-content:space-evenly;max-width:500px;margin:auto;padding:0px">
+          <div style="width:300px;padding:0px;color:rgb(22, 112, 6)"><center><h3>Green Course</h3></center></div>
+          <div style="width:300px;padding:0px"><center>Ours</center></div>
+          <div style="width:300px;padding:0px"><center>Total Interventions: 7</center></div>
+          <iframe width="768" height="432" max-width="100%" src="https://www.youtube.com/embed/Ez2oqhrrrb8?autoplay=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+      </div><hr>
+
+
+
+      <!-- Previous Works -->
+      <center id="sourceCode"><h1>Related Works</h1></center>
+      <div style="width:800px; margin:0 auto; text-align=right; font-size:20px">
+      <p>
+      Triest, Sivaprakasam, Wang, Wang, Johnson, Scherer. TartanDrive: A Large-Scale Dataset for Learning Off-Road Dynamics Models. </br> In ICRA 2022. <a href="https://arxiv.org/abs/2205.01791">[ArXiv]</a>
+      </p>
+
+      <p>
+      Triest, Guaman Castro, Maheshwari, Sivaprakasam, Wang, Scherer. Learning Risk-Aware Costmaps via Inverse Reinforcement Learning for Off-Road Navigation </br> In ICRA 2023. <a href="https://arxiv.org/abs/2302.00134">[ArXiv]</a>
+      </p>
+      </div>
+      <br><hr>
+
+      <table align=center width=1150px>
+        <center><h1>Paper and Bibtex</h1></center>
+        <tr>
+        <td width=350px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <a href="https://arxiv.org/pdf/2209.10788.pdf"><img style="height:150px" src="resources/thumbnail.png"/></a>
+        <center>
+        <span style="font-size:20pt"><a href="https://arxiv.org/pdf/2209.10788.pdf">[Paper]</a>
+        <span style="font-size:20pt"><a href="https://arxiv.org/abs/2209.10788">[ArXiv]</a>
+        <!-- <span style="font-size:20pt"><a href="resources/slides.pdf">[Slides]</a></span> --> 
+        <!-- <span style="font-size:20pt"><a href="resources/poster.pdf">[Poster]</a></span> -->
+        </center>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+        <!-- <p style="margin-top:4px;"></p> -->
+        <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Mateo Guaman Castro, Samuel Triest, Wenshan Wang, Jason M. Gregory, Felix Sanchez, John G. Rogers III, Sebastian Scherer. <b>How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability.</b> ICRA, 2023. <br/> </span></p>
+        <!-- <p style="margin-top:20px;"></p> -->
+        <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('gcp2020_bib')" class="togglebib">[Bibtex]</a></span>
+        </td>
+        </tr>
+        <tr>
+        <td width=250px align=left>
+        </td>
+        <td width=50px align=center>
+        </td>
+        <td width=550px align=left>
+          <div class="paper" id="gcp2020_bib">
+            <pre xml:space="preserve">
+            @misc{hdif2023,
+                title={How Does It Feel? Self-Supervised Costmap Learning for Off-Road Vehicle Traversability},
+                author={Guaman Castro, Mateo and Triest, Samuel and
+                Wang, Wenshan and Gregory, Jason M. and Sanchez, Felix and Rogers III, John G. and Scherer, Sebastian},
+                year={2023},
+                Booktitle={2023 International Conference on Robotics and Automation (ICRA)},
+                organization={IEEE}
+            }</pre>
+          </div>
+          </td>
+          </tr>
+      </table>
+    <br><hr>
+      </table>
+
+
+      <div style="width:800px; margin:0 auto; text-align=center">
+        <p align="right">Website template borrowed from <a href="https://github.com/orybkin/latco">here</a>.</p>
+      </div>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</div>
+</body>
+</html>
